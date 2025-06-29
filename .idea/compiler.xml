@@ -6,13 +6,25 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="social-media" />
+      </profile>
+      <profile name="Annotation profile for invoiceGeneratorApi" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="false">
+          <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.38/lombok-1.18.38.jar" />
+        </processorPath>
+        <module name="invoiceGeneratorApi" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="invoice-generator" target="17" />
+    </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
-      <module name="social-media" options="-parameters" />
+      <module name="invoice-generator" options="-parameters" />
+      <module name="invoiceGeneratorApi" options="-parameters" />
     </option>
   </component>
 </project>

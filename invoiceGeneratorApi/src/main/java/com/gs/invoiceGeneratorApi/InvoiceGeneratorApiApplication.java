@@ -1,12 +1,13 @@
-package com.gs;
+package com.gs.invoiceGeneratorApi;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class SocialMediaApplication {
+public class InvoiceGeneratorApiApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(SocialMediaApplication.class, args);
+		SpringApplication.run(InvoiceGeneratorApiApplication.class, args);
 	}
+
 }

@@ -1,10 +1,10 @@
-package com.gs;
+package com.gs.invoiceGeneratorApi;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class SocialMediaApplicationTests {
+class InvoiceGeneratorApiApplicationTests {
 
 	@Test
 	void contextLoads() {
